@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Run this with Ruby 2.4.1 for that Rails 5 goodness
+- rake db:populate does the db drop and migirations, plus it populates the database with all the teams and some of their pictures
+- We technically have the team members and advisor for each team if we wanna do anything with that
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TBD:
+- Add an awards page
+- Make it responsive
