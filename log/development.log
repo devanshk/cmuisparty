@@ -1200,3 +1200,685 @@ Processing by HomeController#splash as HTML
 Completed 200 OK in 53ms (Views: 45.8ms | ActiveRecord: 5.2ms)
 
 
+Started GET "/teams" for ::1 at 2018-04-11 22:29:33 -0400
+Started GET "/teams/18/edit" for ::1 at 2018-04-11 22:29:33 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamsController#index as HTML
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"18"}
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (14.8ms)
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (18.2ms)
+  Rendered teams/edit.html.erb within layouts/application (21.3ms)
+Started GET "/" for ::1 at 2018-04-11 22:29:33 -0400
+Completed 200 OK in 275ms (Views: 248.7ms | ActiveRecord: 0.9ms)
+
+
+Completed 200 OK in 252ms (Views: 113.3ms | ActiveRecord: 15.0ms)
+
+
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (1.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (117.5ms)
+Completed 200 OK in 147ms (Views: 106.8ms | ActiveRecord: 35.3ms)
+
+
+Started GET "/" for ::1 at 2018-04-11 22:29:35 -0400
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 42ms (Views: 36.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2018-04-11 22:29:37 -0400
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 42ms (Views: 36.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:29:37 -0400
+Started GET "/teams/18/edit" for ::1 at 2018-04-11 22:29:37 -0400
+Processing by TeamsController#index as HTML
+Processing by TeamsController#edit as HTML
+  Rendering teams/index.html.erb within layouts/application
+  Parameters: {"id"=>"18"}
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.8ms)
+  [1m[36mTeam Load (5.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+Started GET "/teams" for ::1 at 2018-04-11 22:29:37 -0400
+  Rendered teams/_form.html.erb (2.2ms)
+Processing by TeamsController#index as HTML
+  Rendered teams/edit.html.erb within layouts/application (7.8ms)
+  Rendering teams/index.html.erb within layouts/application
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.7ms)
+
+
+Completed 200 OK in 55ms (Views: 46.8ms | ActiveRecord: 5.0ms)
+
+
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 54ms (Views: 40.9ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/teams/1/edit" for ::1 at 2018-04-11 22:29:39 -0400
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (4.6ms)
+  Rendered teams/edit.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 44ms (Views: 38.2ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/teams/1" for ::1 at 2018-04-11 22:29:42 -0400
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zm9N8iYOdjwopOIV9Gf1rVfqsOhMUMPaJFk/dvaUlY8eQNUpmsX5R2y4gMhQaXP16aIGqwhFh2DVBcFESZhJkw==", "team"=>{"name"=>"CMU Spring Carnival", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007ff5b5717750 @tempfile=#<Tempfile:/var/folders/cm/9dkt2q_x3dvdwf0qw9yhyzh40000gn/T/RackMultipart20180411-88091-1mr02lu.jpg>, @original_filename="30052193_1664656366962339_4247772947774714361_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"team[photo]\"; filename=\"30052193_1664656366962339_4247772947774714361_o.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Team", "id"=>"1"}
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "teams" SET "photo" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["photo", "30052193_1664656366962339_4247772947774714361_o.jpg"], ["updated_at", "2018-04-12 02:29:42.889152"], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3005/teams
+Completed 302 Found in 10ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:29:42 -0400
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:29:45 -0400
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2018-04-11 22:29:46 -0400
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+Started GET "/" for ::1 at 2018-04-11 22:29:46 -0400
+Processing by HomeController#splash as HTML
+  [1m[36mPerson Load (2.0ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (3.0ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mPerson Load (1.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mTeam Load (1.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (1.0ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (1.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (1.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (1.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.9ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (1.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (1.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (1.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[36mPerson Load (0.9ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  Rendered home/splash.html.erb within layouts/application (57.0ms)
+  [1m[36mPerson Load (15.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (1.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (3.8ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.8ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+Completed 200 OK in 100ms (Views: 81.6ms | ActiveRecord: 16.2ms)
+
+
+  [1m[36mPerson Load (0.8ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (75.1ms)
+Completed 200 OK in 102ms (Views: 63.8ms | ActiveRecord: 36.4ms)
+
+
+Started GET "/" for ::1 at 2018-04-11 22:30:10 -0400
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:30:10 -0400
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:30:10 -0400
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/3/edit" for ::1 at 2018-04-11 22:30:12 -0400
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (1.7ms)
+  Rendered teams/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 26ms (Views: 21.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/teams/3" for ::1 at 2018-04-11 22:30:21 -0400
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oNqRqcaPzrjX/hMvCjRBIOYoLLsjwafWWvPHptb4FJgXADp6WzoFz8eSqwoy+e7UWWIVzHs7wuFZvq2E2mBC3Q==", "team"=>{"name"=>"Beaver County Animal Shelter", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007ff5bc0c86b8 @tempfile=#<Tempfile:/var/folders/cm/9dkt2q_x3dvdwf0qw9yhyzh40000gn/T/RackMultipart20180411-88091-1jrckwt.jpg>, @original_filename="30261561_1695023243924044_3238482285523107840_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"team[photo]\"; filename=\"30261561_1695023243924044_3238482285523107840_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Team", "id"=>"3"}
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "teams" SET "photo" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["photo", "30261561_1695023243924044_3238482285523107840_n.jpg"], ["updated_at", "2018-04-12 02:30:21.595575"], ["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3005/teams
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:30:21 -0400
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:30:23 -0400
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-04-11 22:30:24 -0400
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 49ms (Views: 43.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2018-04-11 22:30:24 -0400
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 45ms (Views: 37.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:35:41 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 197ms (Views: 175.1ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for ::1 at 2018-04-11 22:35:42 -0400
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (1.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (78.2ms)
+Completed 200 OK in 105ms (Views: 81.1ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/" for ::1 at 2018-04-11 22:35:46 -0400
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 43ms (Views: 37.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:35:46 -0400
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/15/edit" for ::1 at 2018-04-11 22:35:49 -0400
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (13.6ms)
+  Rendered teams/edit.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 42ms (Views: 35.4ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/teams/15" for ::1 at 2018-04-11 22:35:54 -0400
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WxuTChQcvieHDPTamxK73TrFUSDmzKfsOe3OuIDl+hntX065GbIanFowhA2p+inTa+5UEQmooNfyxnWeO7Gr8Q==", "team"=>{"name"=>"Education Partnership 2", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007fd696a12b50 @tempfile=#<Tempfile:/var/folders/cm/9dkt2q_x3dvdwf0qw9yhyzh40000gn/T/RackMultipart20180411-95358-1smbah6.jpg>, @original_filename="30052193_1664656366962339_4247772947774714361_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"team[photo]\"; filename=\"30052193_1664656366962339_4247772947774714361_o.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Team", "id"=>"15"}
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "teams" SET "photo" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["photo", "30052193_1664656366962339_4247772947774714361_o.jpg"], ["updated_at", "2018-04-12 02:35:54.184380"], ["id", 15]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 1.6ms)
+
+
+  
+Excon::Error::Socket (getaddrinfo: nodename nor servname provided, or not known (SocketError)):
+  
+app/controllers/teams_controller.rb:44:in `block in update'
+app/controllers/teams_controller.rb:43:in `update'
+Started GET "/teams/15/edit" for ::1 at 2018-04-11 22:36:59 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (14.7ms)
+  Rendered teams/edit.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 241ms (Views: 208.2ms | ActiveRecord: 5.9ms)
+
+
+Started PATCH "/teams/15" for ::1 at 2018-04-11 22:37:04 -0400
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2EkcIefwUDEFJkv0CCyM/MxmUS0vgNx2RwHBymWEI/sxzMPfzskWfpdUmHTXwbs5TizguKMj4hvkq4bUvM1YWA==", "team"=>{"name"=>"Education Partnership 2", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f924f7eeb20 @tempfile=#<Tempfile:/var/folders/cm/9dkt2q_x3dvdwf0qw9yhyzh40000gn/T/RackMultipart20180411-97080-110qniu.jpg>, @original_filename="30052193_1664656366962339_4247772947774714361_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"team[photo]\"; filename=\"30052193_1664656366962339_4247772947774714361_o.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Team", "id"=>"15"}
+  [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "teams" SET "photo" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["photo", "30052193_1664656366962339_4247772947774714361_o.jpg"], ["updated_at", "2018-04-12 02:37:04.284834"], ["id", 15]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 8.8ms)
+
+
+  
+Excon::Error::Socket (getaddrinfo: nodename nor servname provided, or not known (SocketError)):
+  
+app/controllers/teams_controller.rb:44:in `block in update'
+app/controllers/teams_controller.rb:43:in `update'
+Started GET "/teams" for ::1 at 2018-04-11 22:44:14 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 211ms (Views: 189.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/teams/15/edit" for ::1 at 2018-04-11 22:44:17 -0400
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (12.0ms)
+  Rendered teams/edit.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 51ms (Views: 31.8ms | ActiveRecord: 8.6ms)
+
+
+Started PATCH "/teams/15" for ::1 at 2018-04-11 22:44:21 -0400
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TS0NZTpOS9PaIiF5XIMihtxDpFSkcY8+oGDP191SLP/7adDWN+DvaAceUa5ua7CIjWihZUsViAVrS3TxZgZ9Fw==", "team"=>{"name"=>"Education Partnership 2", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007ffae0b08c58 @tempfile=#<Tempfile:/var/folders/cm/9dkt2q_x3dvdwf0qw9yhyzh40000gn/T/RackMultipart20180411-6104-110db7s.jpg>, @original_filename="30052193_1664656366962339_4247772947774714361_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"team[photo]\"; filename=\"30052193_1664656366962339_4247772947774714361_o.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Team", "id"=>"15"}
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "teams" SET "photo" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["photo", "30052193_1664656366962339_4247772947774714361_o.jpg"], ["updated_at", "2018-04-12 02:44:21.998176"], ["id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 1042ms (ActiveRecord: 1.6ms)
+
+
+  
+Excon::Error::Forbidden (Expected(200) <=> Actual(403 Forbidden)
+excon.error.response
+  :body          => "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>SignatureDoesNotMatch</Code><Message>The request signature we calculated does not match the signature you provided. Check your key and signing method.</Message><AWSAccessKeyId>AKIAJBGL6U7JK2SB3Y3Q</AWSAccessKeyId><StringToSign>AWS4-HMAC-SHA256\n20180412T024422Z\n20180412/us-east-1/s3/aws4_request\nba1dc92abd87db5c00bef9232c38b33c769386beb9ac907d581cf1476ab16766</StringToSign><SignatureProvided>b34e150ce700ff9a0ef4cb8a27a876a308f9f37bb9524ae26fc1ef5d05c18395</SignatureProvided><StringToSignBytes>41 57 53 34 2d 48 4d 41 43 2d 53 48 41 32 35 36 0a 32 30 31 38 30 34 31 32 54 30 32 34 34 32 32 5a 0a 32 30 31 38 30 34 31 32 2f 75 73 2d 65 61 73 74 2d 31 2f 73 33 2f 61 77 73 34 5f 72 65 71 75 65 73 74 0a 62 61 31 64 63 39 32 61 62 64 38 37 64 62 35 63 30 30 62 65 66 39 32 33 32 63 33 38 62 33 33 63 37 36 39 33 38 36 62 65 62 39 61 63 39 30 37 64 35 38 31 63 66 31 34 37 36 61 62 31 36 37 36 36</StringToSignBytes><CanonicalRequest>PUT\n/uploads/team/photo/15/30052193_1664656366962339_4247772947774714361_o.jpg\n\ncontent-length:83140\ncontent-type:image/jpeg\nhost:cmuis-party.s3.amazonaws.com\nx-amz-acl:public-read\nx-amz-content-sha256:2a4f54c8436f757aa7e64319eed4c5d9d8e6ee79cf92a00e5b0ddc812bf04739\nx-amz-date:20180412T024422Z\n\ncontent-length;content-type;host;x-amz-acl;x-amz-content-sha256;x-amz-date\n2a4f54c8436f757aa7e64319eed4c5d9d8e6ee79cf92a00e5b0ddc812bf04739</CanonicalRequest><CanonicalRequestBytes>50 55 54 0a 2f 75 70 6c 6f 61 64 73 2f 74 65 61 6d 2f 70 68 6f 74 6f 2f 31 35 2f 33 30 30 35 32 31 39 33 5f 31 36 36 34 36 35 36 33 36 36 39 36 32 33 33 39 5f 34 32 34 37 37 37 32 39 34 37 37 37 34 37 31 34 33 36 31 5f 6f 2e 6a 70 67 0a 0a 63 6f 6e 74 65 6e 74 2d 6c 65 6e 67 74 68 3a 38 33 31 34 30 0a 63 6f 6e 74 65 6e 74 2d 74 79 70 65 3a 69 6d 61 67 65 2f 6a 70 65 67 0a 68 6f 73 74 3a 63 6d 75 69 73 2d 70 61 72 74 79 2e 73 33 2e 61 6d 61 7a 6f 6e 61 77 73 2e 63 6f 6d 0a 78 2d 61 6d 7a 2d 61 63 6c 3a 70 75 62 6c 69 63 2d 72 65 61 64 0a 78 2d 61 6d 7a 2d 63 6f 6e 74 65 6e 74 2d 73 68 61 32 35 36 3a 32 61 34 66 35 34 63 38 34 33 36 66 37 35 37 61 61 37 65 36 34 33 31 39 65 65 64 34 63 35 64 39 64 38 65 36 65 65 37 39 63 66 39 32 61 30 30 65 35 62 30 64 64 63 38 31 32 62 66 30 34 37 33 39 0a 78 2d 61 6d 7a 2d 64 61 74 65 3a 32 30 31 38 30 34 31 32 54 30 32 34 34 32 32 5a 0a 0a 63 6f 6e 74 65 6e 74 2d 6c 65 6e 67 74 68 3b 63 6f 6e 74 65 6e 74 2d 74 79 70 65 3b 68 6f 73 74 3b 78 2d 61 6d 7a 2d 61 63 6c 3b 78 2d 61 6d 7a 2d 63 6f 6e 74 65 6e 74 2d 73 68 61 32 35 36 3b 78 2d 61 6d 7a 2d 64 61 74 65 0a 32 61 34 66 35 34 63 38 34 33 36 66 37 35 37 61 61 37 65 36 34 33 31 39 65 65 64 34 63 35 64 39 64 38 65 36 65 65 37 39 63 66 39 32 61 30 30 65 35 62 30 64 64 63 38 31 32 62 66 30 34 37 33 39</CanonicalRequestBytes><RequestId>37546CDBD634C43D</RequestId><HostId>x0vmdn8jlrFA/X1IkWR++5Ltn/tK45zUWRnw6mTIjyJzNVY0nmaxhbrXst3ZVd+KtgDsoXzz/Yc=</HostId></Error>"
+  :cookies       => [
+  ]
+  :headers       => {
+    "Connection"       => "close"
+    "Content-Type"     => "application/xml"
+    "Date"             => "Thu, 12 Apr 2018 02:44:22 GMT"
+    "Server"           => "AmazonS3"
+    "x-amz-id-2"       => "x0vmdn8jlrFA/X1IkWR++5Ltn/tK45zUWRnw6mTIjyJzNVY0nmaxhbrXst3ZVd+KtgDsoXzz/Yc="
+    "x-amz-request-id" => "37546CDBD634C43D"
+  }
+  :host          => "cmuis-party.s3.amazonaws.com"
+  :local_address => "10.0.0.140"
+  :local_port    => 53079
+  :path          => "/uploads/team/photo/15/30052193_1664656366962339_4247772947774714361_o.jpg"
+  :port          => 443
+  :reason_phrase => "Forbidden"
+  :remote_ip     => "52.216.228.32"
+  :status        => 403
+  :status_line   => "HTTP/1.1 403 Forbidden\r\n"
+):
+  
+app/controllers/teams_controller.rb:44:in `block in update'
+app/controllers/teams_controller.rb:43:in `update'
+Started GET "/teams" for ::1 at 2018-04-11 22:47:07 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (1.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 582ms (Views: 527.8ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/teams/15/edit" for ::1 at 2018-04-11 22:47:11 -0400
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (14.2ms)
+  Rendered teams/edit.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 44ms (Views: 36.9ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/teams/15" for ::1 at 2018-04-11 22:47:16 -0400
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tzPYDC1hjf6CF6VPtaI/WnrEb2IHQw2WdPQgEGJhIfwFBWCE7QbPYkr0hEE/PX9kpIxUdeM9XAlify0I4fH/4w==", "team"=>{"name"=>"Education Partnership 2", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007fc9f51cc138 @tempfile=#<Tempfile:/var/folders/cm/9dkt2q_x3dvdwf0qw9yhyzh40000gn/T/RackMultipart20180411-9537-1tl6cil.jpg>, @original_filename="30052193_1664656366962339_4247772947774714361_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"team[photo]\"; filename=\"30052193_1664656366962339_4247772947774714361_o.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Team", "id"=>"15"}
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "teams" SET "photo" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["photo", "30052193_1664656366962339_4247772947774714361_o.jpg"], ["updated_at", "2018-04-12 02:47:16.034067"], ["id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 952ms (ActiveRecord: 1.2ms)
+
+
+  
+Excon::Error::Forbidden (Expected(200) <=> Actual(403 Forbidden)
+excon.error.response
+  :body          => "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>SignatureDoesNotMatch</Code><Message>The request signature we calculated does not match the signature you provided. Check your key and signing method.</Message><AWSAccessKeyId>AKIAJBGL6U7JK2SB3Y3Q</AWSAccessKeyId><StringToSign>AWS4-HMAC-SHA256\n20180412T024716Z\n20180412/us-east-1/s3/aws4_request\n08ef361e09da816550e6af20d2547f2c1f600a2f8e2e5f0acd4cdf91bc6eb560</StringToSign><SignatureProvided>e2d9934c76f47806ebb8f13974db734591c3db073ed694849e3d48e102c23f8d</SignatureProvided><StringToSignBytes>41 57 53 34 2d 48 4d 41 43 2d 53 48 41 32 35 36 0a 32 30 31 38 30 34 31 32 54 30 32 34 37 31 36 5a 0a 32 30 31 38 30 34 31 32 2f 75 73 2d 65 61 73 74 2d 31 2f 73 33 2f 61 77 73 34 5f 72 65 71 75 65 73 74 0a 30 38 65 66 33 36 31 65 30 39 64 61 38 31 36 35 35 30 65 36 61 66 32 30 64 32 35 34 37 66 32 63 31 66 36 30 30 61 32 66 38 65 32 65 35 66 30 61 63 64 34 63 64 66 39 31 62 63 36 65 62 35 36 30</StringToSignBytes><CanonicalRequest>PUT\n/uploads/team/photo/15/30052193_1664656366962339_4247772947774714361_o.jpg\n\ncontent-length:83140\ncontent-type:image/jpeg\nhost:cmuis-party.s3.amazonaws.com\nx-amz-acl:public-read\nx-amz-content-sha256:2a4f54c8436f757aa7e64319eed4c5d9d8e6ee79cf92a00e5b0ddc812bf04739\nx-amz-date:20180412T024716Z\n\ncontent-length;content-type;host;x-amz-acl;x-amz-content-sha256;x-amz-date\n2a4f54c8436f757aa7e64319eed4c5d9d8e6ee79cf92a00e5b0ddc812bf04739</CanonicalRequest><CanonicalRequestBytes>50 55 54 0a 2f 75 70 6c 6f 61 64 73 2f 74 65 61 6d 2f 70 68 6f 74 6f 2f 31 35 2f 33 30 30 35 32 31 39 33 5f 31 36 36 34 36 35 36 33 36 36 39 36 32 33 33 39 5f 34 32 34 37 37 37 32 39 34 37 37 37 34 37 31 34 33 36 31 5f 6f 2e 6a 70 67 0a 0a 63 6f 6e 74 65 6e 74 2d 6c 65 6e 67 74 68 3a 38 33 31 34 30 0a 63 6f 6e 74 65 6e 74 2d 74 79 70 65 3a 69 6d 61 67 65 2f 6a 70 65 67 0a 68 6f 73 74 3a 63 6d 75 69 73 2d 70 61 72 74 79 2e 73 33 2e 61 6d 61 7a 6f 6e 61 77 73 2e 63 6f 6d 0a 78 2d 61 6d 7a 2d 61 63 6c 3a 70 75 62 6c 69 63 2d 72 65 61 64 0a 78 2d 61 6d 7a 2d 63 6f 6e 74 65 6e 74 2d 73 68 61 32 35 36 3a 32 61 34 66 35 34 63 38 34 33 36 66 37 35 37 61 61 37 65 36 34 33 31 39 65 65 64 34 63 35 64 39 64 38 65 36 65 65 37 39 63 66 39 32 61 30 30 65 35 62 30 64 64 63 38 31 32 62 66 30 34 37 33 39 0a 78 2d 61 6d 7a 2d 64 61 74 65 3a 32 30 31 38 30 34 31 32 54 30 32 34 37 31 36 5a 0a 0a 63 6f 6e 74 65 6e 74 2d 6c 65 6e 67 74 68 3b 63 6f 6e 74 65 6e 74 2d 74 79 70 65 3b 68 6f 73 74 3b 78 2d 61 6d 7a 2d 61 63 6c 3b 78 2d 61 6d 7a 2d 63 6f 6e 74 65 6e 74 2d 73 68 61 32 35 36 3b 78 2d 61 6d 7a 2d 64 61 74 65 0a 32 61 34 66 35 34 63 38 34 33 36 66 37 35 37 61 61 37 65 36 34 33 31 39 65 65 64 34 63 35 64 39 64 38 65 36 65 65 37 39 63 66 39 32 61 30 30 65 35 62 30 64 64 63 38 31 32 62 66 30 34 37 33 39</CanonicalRequestBytes><RequestId>D99FC6A9ECD42E3C</RequestId><HostId>JjWb6zrXecDzwgRT/MIO5OuB/Fs2oFjR8un4V93amrEz+XKH2ZQG78qyrjQALgPVMch1rqJczS0=</HostId></Error>"
+  :cookies       => [
+  ]
+  :headers       => {
+    "Connection"       => "close"
+    "Content-Type"     => "application/xml"
+    "Date"             => "Thu, 12 Apr 2018 02:47:16 GMT"
+    "Server"           => "AmazonS3"
+    "x-amz-id-2"       => "JjWb6zrXecDzwgRT/MIO5OuB/Fs2oFjR8un4V93amrEz+XKH2ZQG78qyrjQALgPVMch1rqJczS0="
+    "x-amz-request-id" => "D99FC6A9ECD42E3C"
+  }
+  :host          => "cmuis-party.s3.amazonaws.com"
+  :local_address => "10.0.0.140"
+  :local_port    => 53310
+  :path          => "/uploads/team/photo/15/30052193_1664656366962339_4247772947774714361_o.jpg"
+  :port          => 443
+  :reason_phrase => "Forbidden"
+  :remote_ip     => "52.216.164.75"
+  :status        => 403
+  :status_line   => "HTTP/1.1 403 Forbidden\r\n"
+):
+  
+app/controllers/teams_controller.rb:44:in `block in update'
+app/controllers/teams_controller.rb:43:in `update'
+Started GET "/teams/15" for ::1 at 2018-04-11 22:48:33 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 239ms (Views: 199.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:48:35 -0400
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 42ms (Views: 29.8ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/teams/15/edit" for ::1 at 2018-04-11 22:48:38 -0400
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (17.0ms)
+  Rendered teams/edit.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 44ms (Views: 39.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/teams/15" for ::1 at 2018-04-11 22:48:41 -0400
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/86vSSpiGR55msinZ9bXbSpsXzwLBi5BsORHCZ283axN+BfB6gVbgrF56antSZdT9CRkK+94f96mb0oRHiwDsw==", "team"=>{"name"=>"Education Partnership 2", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007fccba300370 @tempfile=#<Tempfile:/var/folders/cm/9dkt2q_x3dvdwf0qw9yhyzh40000gn/T/RackMultipart20180411-11375-lidb21.jpg>, @original_filename="30052193_1664656366962339_4247772947774714361_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"team[photo]\"; filename=\"30052193_1664656366962339_4247772947774714361_o.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Team", "id"=>"15"}
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "teams" SET "photo" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["photo", "30052193_1664656366962339_4247772947774714361_o.jpg"], ["updated_at", "2018-04-12 02:48:41.658204"], ["id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3005/teams
+Completed 302 Found in 345ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/teams" for ::1 at 2018-04-11 22:48:42 -0400
+Processing by TeamsController#index as HTML
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-04-11 22:48:44 -0400
+Processing by HomeController#splash as HTML
+  Rendering home/splash.html.erb within layouts/application
+  [1m[36mTeam Load (2.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."name" ASC[0m
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 3]]
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 17]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 5]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 4]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 18]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 15]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 12]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 6]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 16]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 8]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 7]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 2]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 13]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 14]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 9]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 10]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams" WHERE "teams"."photo" IS NULL[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "teams"[0m
+  Rendered home/splash.html.erb within layouts/application (75.2ms)
+Completed 200 OK in 103ms (Views: 86.5ms | ActiveRecord: 13.3ms)
+
+

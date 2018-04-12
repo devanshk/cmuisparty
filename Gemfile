@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
 
 # Photo Uploads
-gem 'carrierwave'
+gem 'carrierwave-aws'
 
 # S3 integration for Heroku
 gem 'fog'
