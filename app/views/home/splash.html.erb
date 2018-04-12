@@ -1,0 +1,24 @@
+<% @teams.each do |team| %>
+  <div class="team <%= team.color %> <%= team.photo_url.nil? ? '' : 'expand' %>">
+      <% if team.photo_url.nil? %>
+        <%= image_tag "default_team_pic.jpg" %>
+      <% else %>
+        <%= image_tag team.photo_url %>
+      <% end %>
+    
+    <div class="description <%= team.photo_url.nil? ? 'waiting' : '' %>">
+      <div class="color_backing <%= team.color %>"> </div>
+      <div class="details">
+        <h1 class='unselectable'> <%= team.name %> </h1>
+        <!-- <ul>
+          <% team.people.each do |person| %>
+            <li> <%= person.name %> </li>
+          <% end %>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+  
+<% end %>
+
+<div id="count" class="unselectable"><%= Team.all.size - Team.waiting.size %> / <%= Team.all.size %> </div>

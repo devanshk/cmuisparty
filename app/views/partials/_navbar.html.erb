@@ -1,0 +1,20 @@
+<nav>
+	<div id="nav-wrapper">
+		<%= link_to "IS Party 2018".html_safe,  root_path, class: "left brand-logo" %>
+		<ul id="nav-mobile" class="right">
+			<!-- Search Bar -->
+			<!-- <li>
+				<div class="nav-wrapper">
+		      <form>
+		        <div class="input-field">
+		          <input id="search" type="search" required>
+		          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+		          <i class="material-icons">close</i>
+		        </div>
+		      </form>
+		    </div>
+			</li> -->
+			<li><%= link_to "<i class='material-icons left'>grid_on</i>Teams".html_safe, teams_path %></li>
+		</ul>
+	</div>
+</nav> <!-- end of nav div -->
